@@ -1,0 +1,5 @@
+asyncio
+aiohttp
+beautifulsoup4
+loguru
+macos-notifications
