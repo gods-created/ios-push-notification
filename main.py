@@ -8,7 +8,7 @@ from modules.worker import Worker
 
 async def main(target_price: str) -> Callable[..., None]:
     async with Worker() as worker:
-        response = await worker._executing()
+        response = await worker.executing()
         
     if response.get('status', 'error') == 'error':
         logger.debug(response)
