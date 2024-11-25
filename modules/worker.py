@@ -49,7 +49,7 @@ class Worker(metaclass=Singleton):
         finally:
             return response_json
         
-    async def _executing(self) -> dict:
+    async def executing(self) -> dict:
         response_json = copy.deepcopy(self.st_response)
         
         try:
